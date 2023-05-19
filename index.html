@@ -9,8 +9,11 @@
   <meta name="keywords" content="global, template, html, sass, jquery">
   <meta name="author" content="Bucky Maler">
   <link rel="stylesheet" href="assets/css/main.css">
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 <body>
+
+
 
 <!-- notification for small viewports and landscape oriented smartphones -->
 <div class="device-notification">
@@ -28,9 +31,9 @@
         <header class="header">
           <a class="header--logo" href="#0">
             <img src="assets/img/logo.png" alt="Global">
-            <p>Global</p>
+            <p>Glowburger</p>
           </a>
-          <button class="header--cta cta">Hire Us</button>
+          <button class="header--cta cta">Let's Chat</button>
           <div class="header--nav-toggle">
             <span></span>
           </div>
@@ -41,15 +44,46 @@
             <li><span>Works</span></li>
             <li><span>About</span></li>
             <li><span>Contact</span></li>
-            <li><span>Hire us</span></li>
+            <li><span>Let's Chat</span></li>
           </ul>
         </nav>
         <ul class="l-main-content main-content">
           <li class="l-section section section--is-active">
             <div class="intro">
               <div class="intro--banner">
-                <h1>Your next<br>interactive<br>experience</h1>
-                <button class="cta">Hire Us
+                <h1>
+                  
+                  Hi, I'm<br>
+                
+                  <!-- <span id="typed-strings">
+                    <span>I'm James Dean</span>
+                    <span>French Designer</span>
+                    <span>Working as a Freelance</span>
+                  </span> -->
+                
+                  <span id="element"></span>
+
+                  <!-- Load library from the CDN -->
+                  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+                  
+                  <!-- Setup and start animation! -->
+                  <script>
+                    var typed = new Typed('#element', {
+                      strings: ['a 3D creator', 'an artist', 'a designer', 'a rock climber', 'a burger chef'],
+                      typeSpeed: 50,
+                      loop: true, // Enable looping
+                      loopCount: Infinity, // Set loopCount to Infinity for endless looping
+                    });
+                  </script>
+                  
+
+
+                  <!-- <span id="typed-text"></span>
+                
+                  <script src="script.js"></script> -->
+                
+                </h1>
+                <button class="cta">Let's Chat
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                   <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
                     <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
@@ -268,7 +302,7 @@
     <li>Works</li>
     <li>About</li>
     <li>Contact</li>
-    <li>Hire us</li>
+    <li>Let's Chat</li>
   </ul>
 </div>
 
